@@ -1,0 +1,57 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/*.parquet
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+reports/*.csv
+reports/*.json
+reports/*.md
+reports/figures/*
+
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Sensitive files
+.env
+.env.*
+!.env.example
+*.key
+credentials.json
+
+# Original and processed datasets
+data/raw/
+data/processed/
+*.parquet
+
+# Large generated reports
+reports/powerbi/
+reports/06_baseline_validation_predictions.csv
+
+# Temporary files
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Power BI temporary files
+*.pbitmp
+
+# Backup archive
+final_kit_TriBach.zip
+
+# Power BI project kept locally
+*.pbix
+
+# Local VS Code settings
+.vscode/
+
+# Allow the trained LightGBM model
+!models/07_lightgbm_model.txt
